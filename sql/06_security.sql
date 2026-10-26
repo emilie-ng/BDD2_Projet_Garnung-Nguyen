@@ -17,7 +17,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON boutique_en_ligne.* TO 'role_admin_app';
 
 
 DROP PROCEDURE IF EXISTS boutique_en_ligne.mes_commandes;
-DELIMITER $$
+DELIMITER //
 CREATE PROCEDURE boutique_en_ligne.mes_commandes()
 SQL SECURITY DEFINER
 BEGIN
@@ -34,7 +34,7 @@ BEGIN
       FROM boutique_en_ligne.commande
      WHERE id_client = v_id_client
      ORDER BY date_commande DESC;
-END$$
+END //
 DELIMITER ;
 GRANT EXECUTE ON PROCEDURE boutique_en_ligne.mes_commandes TO 'role_client';
 

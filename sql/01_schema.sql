@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS paiement;
 DROP TABLE IF EXISTS mouvement_stock;
 
 CREATE TABLE clients (
-	id_client INT PRIMARY KEY,
+	id_client INT AUTO_INCREMENT PRIMARY KEY,
 	nom VARCHAR(255) NOT NULL,
 	prenom VARCHAR(255) NOT NULL,
 	email VARCHAR(255) NOT NULL,
@@ -22,14 +22,14 @@ CREATE TABLE clients (
 ) engine = InnoDB;
 
 CREATE TABLE categorie (
-	id_categorie INT PRIMARY KEY,
+	id_categorie INT AUTO_INCREMENT PRIMARY KEY,
 	nom VARCHAR(100) NOT NULL,
 	_description VARCHAR(255),
 	CONSTRAINT uq_categorie_nom UNIQUE (nom)
 ) engine = InnoDB;
 
 CREATE TABLE adresse (
-	id_adresse INT PRIMARY KEY,
+	id_adresse INT AUTO_INCREMENT PRIMARY KEY,
 	id_client INT NOT NULL,
 	rue VARCHAR(255) NOT NULL,
 	ville VARCHAR(255) NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE adresse (
 ) engine = InnoDB;
 
 CREATE TABLE IF NOT EXISTS produit (
-	id_produit INT PRIMARY KEY,
+	id_produit INT AUTO_INCREMENT PRIMARY KEY,
 	id_categorie INT NOT NULL,
 	nom VARCHAR(255) NOT NULL,
 	_description TEXT,
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS produit (
 ) engine = InnoDB;
 
 CREATE TABLE commande (
-	id_commande INT PRIMARY KEY,
+	id_commande INT AUTO_INCREMENT PRIMARY KEY,
 	id_client INT NOT NULL,
 	date_commande DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	statut VARCHAR(25) NOT NULL DEFAULT 'panier',
@@ -68,7 +68,7 @@ CREATE TABLE commande (
 ) engine = InnoDB;
 
 CREATE TABLE ligne_commande (
-	id_ligne INT PRIMARY KEY,
+	id_ligne INT AUTO_INCREMENT PRIMARY KEY,
 	id_commande INT NOT NULL,
 	id_produit INT NOT NULL,
 	quantite INT NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE ligne_commande (
 ) engine = InnoDB;
 
 CREATE TABLE paiement (
-	id_paiement INT PRIMARY KEY,
+	id_paiement INT AUTO_INCREMENT PRIMARY KEY,
 	id_commande INT NOT NULL,
 	date_paiement DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 	montant DECIMAL(12,2) NOT NULL,

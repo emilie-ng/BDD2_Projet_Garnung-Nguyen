@@ -7,7 +7,7 @@ GRANT SELECT ON boutique_en_ligne.categorie TO 'role_gestionnaire';
 GRANT SELECT, INSERT, UPDATE ON boutique_en_ligne.produit TO 'role_gestionnaire';
 GRANT SELECT ON boutique_en_ligne.clients TO 'role_gestionnaire';
 GRANT SELECT ON boutique_en_ligne.commande TO 'role_gestionnaire';
-GRANT SELECT ON boutique_en_ligne.ligne_commande TO 'role_gestionnaire';
+GRANT SELECT ON boutique_en_ligne.concerner TO 'role_gestionnaire';
 GRANT SELECT ON boutique_en_ligne.paiement TO 'role_gestionnaire';
 GRANT SELECT ON boutique_en_ligne.mouvement_stock TO 'role_gestionnaire';
 

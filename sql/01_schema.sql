@@ -7,7 +7,7 @@ DROP TABLE IF EXISTS categorie;
 DROP TABLE IF EXISTS adresse;
 DROP TABLE IF EXISTS produit;
 DROP TABLE IF EXISTS commande;
-DROP TABLE IF EXISTS ligne_commande;
+DROP TABLE IF EXISTS concerner;
 DROP TABLE IF EXISTS paiement;
 DROP TABLE IF EXISTS mouvement_stock;
 
@@ -41,7 +41,7 @@ CREATE TABLE adresse (
 	CONSTRAINT chk_adresse_type CHECK (type_adresse IN ('livraison','facturation'))
 ) engine = InnoDB;
 
-CREATE TABLE IF NOT EXISTS produit (
+CREATE TABLE produit (
 	id_produit INT PRIMARY KEY,
 	id_categorie INT NOT NULL,
 	nom VARCHAR(255) NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE commande (
 	CONSTRAINT chk_commande_montant CHECK (montant_total >= 0)
 ) engine = InnoDB;
 
-CREATE TABLE ligne_commande (
+CREATE TABLE concerner (
 	id_ligne INT PRIMARY KEY,
 	id_commande INT NOT NULL,
 	id_produit INT NOT NULL,

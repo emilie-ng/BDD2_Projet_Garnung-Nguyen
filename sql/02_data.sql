@@ -121,9 +121,7 @@ INSERT INTO clients (id_client, nom, prenom, email, telephone, date_inscription)
 (117, 'Martin', 'Camille', 'camille.martin@example.com', '0639980117', '2026-04-29'),
 (118, 'Martin', 'Arthur', 'arthur.martin@example.com', '0639980118', '2026-04-05'),
 (119, 'Bernard', 'Aya', 'aya.bernard@example.com', '0639980119', '2026-04-15'),
-(120, 'Bernard', 'Raphael', 'raphael.bernard@example.com', '0639980120', '2026-05-11');
-
-INSERT INTO clients (id_client, nom, prenom, email, telephone, date_inscription) VALUES
+(120, 'Bernard', 'Raphael', 'raphael.bernard@example.com', '0639980120', '2026-05-11'),
 (121, 'Dubois', 'Emma', 'emma.dubois@example.com', '0639980121', '2026-01-14'),
 (122, 'Dubois', 'Lucas', 'lucas.dubois@example.com', '0639980122', '2026-03-01'),
 (123, 'Dubois', 'Lina', 'lina.dubois@example.com', '0639980123', '2026-01-26'),
@@ -289,9 +287,7 @@ INSERT INTO adresse (id_adresse, id_client, rue, ville, code_postal, pays, type_
 (62, 62, '36 rue du Moulin', 'Bordeaux', '33000', 'France', 'livraison'),
 (63, 63, '173 rue des Ormes', 'Lyon', '69003', 'France', 'livraison'),
 (64, 64, '15 rue des Pins', 'Lille', '59000', 'France', 'livraison'),
-(65, 65, '152 avenue des Érables', 'Toulouse', '31000', 'France', 'livraison');
-
-INSERT INTO adresse (id_adresse, id_client, rue, ville, code_postal, pays, type_adresse) VALUES
+(65, 65, '152 avenue des Érables', 'Toulouse', '31000', 'France', 'livraison'),
 (66, 66, '147 rue de la Paix', 'Nantes', '44000', 'France', 'livraison'),
 (67, 67, '12 rue Pasteur', 'Marseille', '13006', 'France', 'livraison'),
 (68, 68, '85 rue des Pins', 'Rennes', '35000', 'France', 'livraison'),
@@ -620,9 +616,7 @@ INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_tot
 (117, 130, '2026-02-17 08:42:00', 'expediee', 432.30),
 (118, 17, '2026-07-15 17:46:00', 'annulee', 434.10),
 (119, 54, '2026-07-20 15:33:00', 'validee', 924.10),
-(120, 91, '2026-05-10 13:23:00', 'livree', 51.80);
-
-INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_total) VALUES
+(120, 91, '2026-05-10 13:23:00', 'livree', 51.80),
 (121, 128, '2026-07-06 08:25:00', 'panier', 0.00),
 (122, 15, '2026-01-23 12:50:00', 'expediee', 383.50),
 (123, 52, '2026-01-06 20:28:00', 'annulee', 171.80),
@@ -742,9 +736,7 @@ INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_tot
 (237, 70, '2026-03-20 14:50:00', 'panier', 0.00),
 (238, 107, '2026-05-13 12:09:00', 'expediee', 534.40),
 (239, 144, '2026-04-07 14:26:00', 'annulee', 184.80),
-(240, 31, '2026-03-01 12:46:00', 'validee', 617.20);
-
-INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_total) VALUES
+(240, 31, '2026-03-01 12:46:00', 'validee', 617.20),
 (241, 68, '2026-05-03 19:34:00', 'livree', 233.40),
 (242, 105, '2026-04-15 11:24:00', 'panier', 0.00),
 (243, 142, '2026-06-14 15:26:00', 'livree', 525.20),
@@ -864,9 +856,7 @@ INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_tot
 (357, 10, '2026-06-22 10:32:00', 'livree', 205.80),
 (358, 47, '2026-05-27 19:16:00', 'panier', 0.00),
 (359, 84, '2026-06-30 13:01:00', 'expediee', 739.20),
-(360, 121, '2026-06-10 15:20:00', 'panier', 0.00);
-
-INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_total) VALUES
+(360, 121, '2026-06-10 15:20:00', 'panier', 0.00),
 (361, 8, '2026-06-12 14:20:00', 'expediee', 633.40),
 (362, 45, '2026-07-05 17:50:00', 'annulee', 1173.80),
 (363, 82, '2026-08-24 16:49:00', 'validee', 789.10),
@@ -986,9 +976,7 @@ INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_tot
 (477, 100, '2026-05-03 15:04:00', 'expediee', 828.00),
 (478, 137, '2026-01-27 19:30:00', 'annulee', 426.60),
 (479, 24, '2026-07-07 18:45:00', 'validee', 19.80),
-(480, 61, '2026-04-28 14:38:00', 'livree', 398.70);
-
-INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_total) VALUES
+(480, 61, '2026-04-28 14:38:00', 'livree', 398.70),
 (481, 98, '2026-06-09 19:47:00', 'panier', 0.00),
 (482, 135, '2026-08-03 17:29:00', 'expediee', 71.80),
 (483, 22, '2026-04-22 16:11:00', 'annulee', 927.00),
@@ -1010,7 +998,7 @@ INSERT INTO commande (id_commande, id_client, date_commande, statut, montant_tot
 (499, 14, '2026-03-15 13:35:00', 'livree', 273.60),
 (500, 51, '2026-05-06 10:32:00', 'panier', 0.00);
 
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+INSERT INTO concerner (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
 (1, 1, 8, 1, 58.90),
 (2, 2, 91, 2, 48.90),
 (3, 2, 101, 1, 51.90),
@@ -1130,9 +1118,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (117, 39, 17, 3, 124.90),
 (118, 40, 39, 3, 82.90),
 (119, 41, 107, 3, 71.90),
-(120, 41, 46, 1, 27.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(120, 41, 46, 1, 27.90),
 (121, 41, 45, 2, 124.90),
 (122, 41, 54, 2, 55.90),
 (123, 42, 58, 2, 35.90),
@@ -1252,9 +1238,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (237, 82, 82, 1, 118.90),
 (238, 82, 107, 1, 71.90),
 (239, 83, 119, 2, 118.90),
-(240, 83, 111, 2, 27.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(240, 83, 111, 2, 27.90),
 (241, 83, 52, 3, 107.90),
 (242, 83, 89, 1, 13.90),
 (243, 84, 20, 2, 58.90),
@@ -1374,9 +1358,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (357, 121, 90, 2, 132.90),
 (358, 121, 94, 3, 69.90),
 (359, 122, 25, 1, 132.90),
-(360, 122, 60, 1, 24.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(360, 122, 60, 1, 24.90),
 (361, 122, 4, 1, 85.90),
 (362, 122, 94, 2, 69.90),
 (363, 123, 29, 2, 85.90),
@@ -1496,9 +1478,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (477, 162, 52, 1, 107.90),
 (478, 163, 2, 3, 86.90),
 (479, 163, 68, 3, 92.90),
-(480, 164, 22, 3, 100.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(480, 164, 22, 3, 100.90),
 (481, 164, 54, 2, 55.90),
 (482, 164, 52, 2, 107.90),
 (483, 164, 75, 3, 131.90),
@@ -1618,9 +1598,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (597, 203, 74, 1, 107.90),
 (598, 203, 10, 3, 91.90),
 (599, 203, 31, 1, 43.90),
-(600, 204, 88, 2, 101.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(600, 204, 88, 2, 101.90),
 (601, 204, 25, 2, 132.90),
 (602, 204, 56, 3, 35.90),
 (603, 205, 84, 1, 63.90),
@@ -1740,9 +1718,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (717, 242, 31, 1, 43.90),
 (718, 242, 5, 3, 99.90),
 (719, 243, 27, 3, 34.90),
-(720, 243, 54, 2, 55.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(720, 243, 54, 2, 55.90),
 (721, 243, 90, 2, 132.90),
 (722, 243, 23, 1, 42.90),
 (723, 244, 112, 2, 82.90),
@@ -1862,9 +1838,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (837, 288, 70, 1, 35.90),
 (838, 288, 93, 2, 60.90),
 (839, 288, 18, 1, 58.90),
-(840, 288, 13, 2, 107.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(840, 288, 13, 2, 107.90),
 (841, 288, 120, 2, 80.90),
 (842, 289, 80, 3, 58.90),
 (843, 289, 43, 1, 64.90),
@@ -1984,9 +1958,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (957, 330, 41, 1, 23.90),
 (958, 330, 19, 1, 114.90),
 (959, 331, 23, 1, 42.90),
-(960, 332, 111, 2, 27.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(960, 332, 111, 2, 27.90),
 (961, 333, 98, 2, 132.90),
 (962, 333, 66, 1, 129.90),
 (963, 333, 77, 1, 138.90),
@@ -2106,9 +2078,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (1077, 371, 31, 3, 43.90),
 (1078, 371, 75, 1, 131.90),
 (1079, 372, 29, 2, 85.90),
-(1080, 372, 25, 2, 132.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(1080, 372, 25, 2, 132.90),
 (1081, 372, 94, 1, 69.90),
 (1082, 372, 101, 3, 51.90),
 (1083, 373, 29, 3, 85.90),
@@ -2228,9 +2198,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (1197, 412, 119, 1, 118.90),
 (1198, 412, 29, 3, 85.90),
 (1199, 412, 97, 3, 18.90),
-(1200, 413, 82, 3, 118.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(1200, 413, 82, 3, 118.90),
 (1201, 413, 72, 3, 94.90),
 (1202, 413, 92, 3, 123.90),
 (1203, 414, 88, 3, 101.90),
@@ -2350,9 +2318,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (1317, 454, 104, 1, 16.90),
 (1318, 454, 114, 3, 23.90),
 (1319, 455, 19, 3, 114.90),
-(1320, 455, 55, 1, 64.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(1320, 455, 55, 1, 64.90),
 (1321, 456, 58, 3, 35.90),
 (1322, 456, 47, 2, 118.90),
 (1323, 456, 65, 1, 77.90),
@@ -2472,9 +2438,7 @@ INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_un
 (1437, 493, 87, 3, 11.90),
 (1438, 494, 120, 3, 80.90),
 (1439, 494, 69, 1, 121.90),
-(1440, 494, 66, 1, 129.90);
-
-INSERT INTO ligne_commande (id_ligne, id_commande, id_produit, quantite, prix_unitaire) VALUES
+(1440, 494, 66, 1, 129.90),
 (1441, 494, 10, 1, 91.90),
 (1442, 494, 76, 3, 58.90),
 (1443, 495, 79, 3, 70.90),
@@ -2620,9 +2584,7 @@ INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_pai
 (117, 138, '2026-06-22 13:46:00', 395.70, 'carte', 'accepte'),
 (118, 139, '2026-02-24 17:09:00', 850.90, 'virement', 'accepte'),
 (119, 140, '2026-07-09 18:30:00', 466.40, 'carte', 'en_attente'),
-(120, 141, '2026-06-27 10:41:00', 900.20, 'carte', 'accepte');
-
-INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_paiement, statut) VALUES
+(120, 141, '2026-06-27 10:41:00', 900.20, 'carte', 'accepte'),
 (121, 142, '2026-02-27 18:07:00', 827.10, 'carte', 'refuse'),
 (122, 143, '2026-07-10 18:31:00', 887.10, 'paypal', 'accepte'),
 (123, 144, '2026-02-22 08:41:00', 563.00, 'carte', 'refuse'),
@@ -2742,9 +2704,7 @@ INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_pai
 (237, 278, '2026-05-21 19:26:00', 293.70, 'paypal', 'accepte'),
 (238, 279, '2026-01-23 17:33:00', 669.20, 'carte', 'refuse'),
 (239, 280, '2026-08-28 19:37:00', 843.30, 'virement', 'accepte'),
-(240, 281, '2026-07-31 12:44:00', 743.00, 'paypal', 'accepte');
-
-INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_paiement, statut) VALUES
+(240, 281, '2026-07-31 12:44:00', 743.00, 'paypal', 'accepte'),
 (241, 283, '2026-01-13 19:11:00', 389.60, 'virement', 'accepte'),
 (242, 284, '2026-03-02 17:30:00', 265.80, 'carte', 'refuse'),
 (243, 285, '2026-08-04 14:50:00', 338.70, 'carte', 'accepte'),
@@ -2864,9 +2824,7 @@ INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_pai
 (357, 420, '2026-05-23 12:46:00', 31.90, 'carte', 'accepte'),
 (358, 421, '2026-01-15 17:10:00', 655.10, 'virement', 'accepte'),
 (359, 423, '2026-02-23 18:37:00', 237.80, 'carte', 'accepte'),
-(360, 424, '2026-02-07 11:17:00', 371.70, 'carte', 'en_attente');
-
-INSERT INTO paiement (id_paiement, id_commande, date_paiement, montant, mode_paiement, statut) VALUES
+(360, 424, '2026-02-07 11:17:00', 371.70, 'carte', 'en_attente'),
 (361, 425, '2026-07-14 17:46:00', 261.50, 'paypal', 'accepte'),
 (362, 426, '2026-06-18 15:44:00', 1208.60, 'carte', 'refuse'),
 (363, 427, '2026-02-10 13:42:00', 659.20, 'virement', 'accepte'),
@@ -3053,9 +3011,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (117, 25, 'sortie', 3, '2026-05-08 15:28:00', 'Validation commande 74'),
 (118, 86, 'sortie', 1, '2026-05-08 15:28:00', 'Validation commande 74'),
 (119, 110, 'sortie', 3, '2026-05-08 15:28:00', 'Validation commande 74'),
-(120, 26, 'sortie', 3, '2026-01-28 13:00:00', 'Validation commande 75');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(120, 26, 'sortie', 3, '2026-01-28 13:00:00', 'Validation commande 75'),
 (121, 80, 'sortie', 3, '2026-01-28 13:00:00', 'Validation commande 75'),
 (122, 102, 'sortie', 1, '2026-05-17 12:57:00', 'Validation commande 77'),
 (123, 25, 'sortie', 2, '2026-05-17 12:57:00', 'Validation commande 77'),
@@ -3175,9 +3131,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (237, 70, 'sortie', 2, '2026-02-24 17:14:00', 'Validation commande 139'),
 (238, 100, 'sortie', 3, '2026-02-24 17:14:00', 'Validation commande 139'),
 (239, 98, 'sortie', 2, '2026-06-27 10:46:00', 'Validation commande 141'),
-(240, 19, 'sortie', 3, '2026-06-27 10:46:00', 'Validation commande 141');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(240, 19, 'sortie', 3, '2026-06-27 10:46:00', 'Validation commande 141'),
 (241, 68, 'sortie', 2, '2026-06-27 10:46:00', 'Validation commande 141'),
 (242, 105, 'sortie', 1, '2026-06-27 10:46:00', 'Validation commande 141'),
 (243, 14, 'sortie', 3, '2026-07-10 18:36:00', 'Validation commande 143'),
@@ -3297,9 +3251,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (357, 50, 'sortie', 2, '2026-06-22 16:44:00', 'Validation commande 205'),
 (358, 65, 'sortie', 3, '2026-06-22 16:44:00', 'Validation commande 205'),
 (359, 10, 'sortie', 1, '2026-07-26 09:29:00', 'Validation commande 207'),
-(360, 42, 'sortie', 3, '2026-07-26 09:29:00', 'Validation commande 207');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(360, 42, 'sortie', 3, '2026-07-26 09:29:00', 'Validation commande 207'),
 (361, 14, 'sortie', 1, '2026-07-26 09:29:00', 'Validation commande 207'),
 (362, 97, 'sortie', 1, '2026-07-26 09:29:00', 'Validation commande 207'),
 (363, 97, 'sortie', 1, '2026-02-05 08:49:00', 'Validation commande 209'),
@@ -3419,9 +3371,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (477, 113, 'sortie', 2, '2026-01-26 14:18:00', 'Validation commande 274'),
 (478, 63, 'sortie', 1, '2026-05-22 19:02:00', 'Validation commande 276'),
 (479, 82, 'sortie', 3, '2026-05-22 19:02:00', 'Validation commande 276'),
-(480, 14, 'sortie', 2, '2026-05-22 19:02:00', 'Validation commande 276');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(480, 14, 'sortie', 2, '2026-05-22 19:02:00', 'Validation commande 276'),
 (481, 64, 'sortie', 3, '2026-05-21 19:31:00', 'Validation commande 278'),
 (482, 49, 'sortie', 2, '2026-08-28 19:42:00', 'Validation commande 280'),
 (483, 67, 'sortie', 3, '2026-08-28 19:42:00', 'Validation commande 280'),
@@ -3541,9 +3491,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (597, 90, 'sortie', 3, '2026-02-01 10:47:00', 'Validation commande 344'),
 (598, 103, 'sortie', 3, '2026-02-01 10:47:00', 'Validation commande 344'),
 (599, 18, 'sortie', 2, '2026-02-27 17:57:00', 'Validation commande 345'),
-(600, 68, 'sortie', 2, '2026-08-14 11:17:00', 'Validation commande 347');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(600, 68, 'sortie', 2, '2026-08-14 11:17:00', 'Validation commande 347'),
 (601, 98, 'sortie', 1, '2026-08-14 11:17:00', 'Validation commande 347'),
 (602, 12, 'sortie', 2, '2026-08-14 11:17:00', 'Validation commande 347'),
 (603, 5, 'sortie', 2, '2026-02-01 10:21:00', 'Validation commande 349'),
@@ -3663,9 +3611,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (717, 66, 'sortie', 3, '2026-01-13 19:35:00', 'Validation commande 408'),
 (718, 31, 'sortie', 2, '2026-03-14 14:56:00', 'Validation commande 409'),
 (719, 63, 'sortie', 3, '2026-03-14 14:56:00', 'Validation commande 409'),
-(720, 8, 'sortie', 3, '2026-03-14 14:56:00', 'Validation commande 409');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(720, 8, 'sortie', 3, '2026-03-14 14:56:00', 'Validation commande 409'),
 (721, 86, 'sortie', 3, '2026-05-23 17:46:00', 'Validation commande 411'),
 (722, 82, 'sortie', 2, '2026-05-23 17:46:00', 'Validation commande 411'),
 (723, 82, 'sortie', 3, '2026-04-09 17:50:00', 'Validation commande 413'),
@@ -3785,9 +3731,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (837, 37, 'sortie', 2, '2026-07-07 19:00:00', 'Validation commande 479'),
 (838, 98, 'sortie', 3, '2026-04-28 14:53:00', 'Validation commande 480'),
 (839, 70, 'sortie', 2, '2026-08-03 17:44:00', 'Validation commande 482'),
-(840, 99, 'sortie', 2, '2026-09-10 12:55:00', 'Validation commande 484');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(840, 99, 'sortie', 2, '2026-09-10 12:55:00', 'Validation commande 484'),
 (841, 8, 'sortie', 2, '2026-09-10 12:55:00', 'Validation commande 484'),
 (842, 102, 'sortie', 1, '2026-09-10 12:55:00', 'Validation commande 484'),
 (843, 110, 'sortie', 2, '2026-09-10 12:55:00', 'Validation commande 484'),
@@ -3907,9 +3851,7 @@ INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite,
 (957, 81, 'entree', 77, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
 (958, 82, 'entree', 38, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
 (959, 83, 'entree', 50, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
-(960, 84, 'entree', 30, '2026-01-02 00:00:00', 'Reapprovisionnement initial');
-
-INSERT INTO mouvement_stock (id_mouvement, id_produit, type_mouvement, quantite, date_mouvement, motif) VALUES
+(960, 84, 'entree', 30, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
 (961, 85, 'entree', 81, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
 (962, 86, 'entree', 76, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
 (963, 87, 'entree', 45, '2026-01-02 00:00:00', 'Reapprovisionnement initial'),
